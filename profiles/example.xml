@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+    <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1" xmlns:ns1="http://www.microsoft.com/networking/WLAN/profile/v3">
+        <name>Infected WiFi</name>
+        <SSIDConfig>
+            <SSID>
+                <name>SSID</name>
+            </SSID>
+        </SSIDConfig>
+        <connectionType>ESS</connectionType>
+        <connectionMode>manual</connectionMode>
+        <MSM>
+            <security>
+                <authEncryption>
+                    <authentication>WPA3SAE</authentication>
+                    <encryption>AES</encryption>
+                    <useOneX>false</useOneX>
+                </authEncryption>
+                <sharedKey>
+                    <keyType>passPhrase</keyType>
+                    <protected>false</protected>
+                    <keyMaterial>randompassword123123</keyMaterial>
+                </sharedKey>
+            </security>
+        </MSM>
+        <ns1:MacRandomization>
+            <ns1:enableRandomization>false</ns1:enableRandomization>
+        </ns1:MacRandomization>
+    </WLANProfile>
